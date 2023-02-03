@@ -1,0 +1,39 @@
+<h1>jj</h1>
+<% if @candidate.errors.any? %>
+<div class="warning">
+   <ul>
+      <% @candidate.errors.full_messages.each do |message| %>
+      <li><%= "請輸入名字" %></li>
+      <% end %>
+  </ul>
+</div>
+  
+<% end %>
+
+<%= form_for(@candidate) do |form| %>
+
+<div>
+   <%= form.label :name %>
+   <%= form.text_field :name %>
+</div>
+
+
+<div>
+   <%= form.label :age %>
+  <%= form.text_field :age %>
+
+</div>
+
+
+<div>
+  <%= form.label :politics %>
+   <%= form.text_area :politics %>
+</div>
+
+
+
+<%= form.submit %>
+
+
+
+<% end %>

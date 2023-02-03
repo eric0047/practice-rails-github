@@ -1,0 +1,25 @@
+
+.profiler-results {
+    display: none;
+}
+
+.field_with_errors {
+    display: inline-block;
+
+    label {
+       color: red;
+       font-weight: bold;
+    }
+
+
+    input {
+        border-color: red;
+        border-width: 1px;
+    }
+   
+
+}
+
+.warning {
+    color: red;
+}
